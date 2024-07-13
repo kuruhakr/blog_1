@@ -1,33 +1,37 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    name: "morethanmin",
-    image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: "frontend developer",
-    bio: "I develop everything using node.",
-    email: "morethanmin.dev@gmail.com",
-    linkedin: "morethanmin",
-    github: "morethanmin",
+    name: "여하월",
+    image: "/avatar.png", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
+    role: "보컬 / 편집",
+    bio: "노래하고 영상하는 여하월 입니다",
+    email: "yeonhawol3@gmail.com",
+    linkedin: "",
+    github: "",
     instagram: "",
+    youtube : "https://youtube.com/channel/UCwskk9ScOIehrv3gnTm8deQ?si=2jL0ssFglXGA18Oc",
   },
   projects: [
     {
-      name: `morethan-log`,
-      href: "https://github.com/morethanmin/morethan-log",
+      name: `여하월 BLOG`,
+      href: "",
     },
   ],
   // blog setting (required)
   blog: {
-    title: "morethan-log",
-    description: "welcome to morethan-log!",
-    scheme: "dark", // 'light' | 'dark' | 'system'
+    title: "여하월 BLOG",
+    description: "welcome to BLOG!",
+    theme: "auto", // ['light', 'dark', 'auto']
   },
 
   // CONFIG configration (required)
-  link: "https://morethan-log.vercel.app",
-  since: 2022, // If leave this empty, current year will be used.
-  lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
+  link: "https://yeohawol_official.vercel.app",
+  since: 2024, // If leave this empty, current year will be used.
+  lang: "ko-KR", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
+  seo: {
+    keywords: ["Blog", "Website", "Notion"],
+  },
 
   // notion configuration (required)
   notionConfig: {
@@ -47,16 +51,10 @@ const CONFIG = {
       siteVerification: process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION || "",
     },
   },
-  naverSearchAdvisor: {
-    enable: false,
-    config: {
-      siteVerification: process.env.NEXT_PUBLIC_NAVER_SITE_VERIFICATION || "",
-    },
-  },
   utterances: {
     enable: true,
     config: {
-      repo: process.env.NEXT_PUBLIC_UTTERANCES_REPO || "",
+      repo: "kuruhakr/blog_1",
       "issue-term": "og:title",
       label: "💬 Utterances",
     },
@@ -69,7 +67,5 @@ const CONFIG = {
     },
   },
   isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
-  revalidateTime: 21600 * 7, // revalidate time for [slug], index
 }
-
-module.exports = { CONFIG }
+module.exports = CONFIG
