@@ -24,7 +24,7 @@ const CONFIG = {
     theme: "auto", // ['light', 'dark', 'auto']
   },
 
-  // CONFIG configration (required)
+  // CONFIG configuration (required)
   link: "https://yeohawol_official.vercel.app",
   since: 2024, // If leave this empty, current year will be used.
   lang: "ko-KR", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
@@ -67,5 +67,6 @@ const CONFIG = {
     },
   },
   isProd: process.env.VERCEL_ENV === "production", // distinguish between development and production environment (ref: https://vercel.com/docs/environment-variables#system-environment-variables)
-}
-module.exports = CONFIG
+};
+
+module.exports = CONFIG;
