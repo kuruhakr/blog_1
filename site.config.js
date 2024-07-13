@@ -9,7 +9,7 @@ const CONFIG = {
     linkedin: "",
     github: "",
     instagram: "",
-    // youtube : "https://youtube.com/channel/UCwskk9ScOIehrv3gnTm8deQ?si=2jL0ssFglXGA18Oc",
+    youtube : "https://youtube.com/channel/UCwskk9ScOIehrv3gnTm8deQ?si=2jL0ssFglXGA18Oc",
   },
   projects: [
     {
