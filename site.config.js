@@ -9,7 +9,7 @@ const CONFIG = {
     linkedin: "",
     github: "",
     instagram: "",
-    youtube : "https://youtube.com/channel/UCwskk9ScOIehrv3gnTm8deQ?si=2jL0ssFglXGA18Oc",
+    youtube: "https://youtube.com/channel/UCwskk9ScOIehrv3gnTm8deQ?si=2jL0ssFglXGA18Oc",
   },
   projects: [
     {
@@ -35,7 +35,7 @@ const CONFIG = {
 
   // notion configuration (required)
   notionConfig: {
-    pageId: process.env.NOTION_PAGE_ID,
+    pageId: process.env.NOTION_PAGE_ID || "", // Set your Notion page ID here or retrieve from environment variables
   },
 
   // plugin configuration (optional)
@@ -70,4 +70,4 @@ const CONFIG = {
   revalidateTime: 21600 * 7, // revalidate time for [slug], index
 };
 
-module.exports = CONFIG;
+export default CONFIG;
