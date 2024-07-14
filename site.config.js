@@ -70,4 +70,4 @@ const CONFIG = {
   revalidateTime: 21600 * 7, // revalidate time for [slug], index
 };
 
-export default CONFIG;
+module.exports = { CONFIG }
