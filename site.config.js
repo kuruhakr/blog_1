@@ -1,37 +1,33 @@
 const CONFIG = {
   // profile setting (required)
   profile: {
-    name: "여하월",
+    name: "morethanmin",
     image: "/avatar.svg", // If you want to create your own notion avatar, check out https://notion-avatar.vercel.app
-    role: "보컬 / 편집",
-    bio: "노래하고 영상하는 여하월 입니다",
-    email: "yeonhawol3@gmail.com",
-    linkedin: "",
-    github: "",
+    role: "frontend developer",
+    bio: "I develop everything using node.",
+    email: "morethanmin.dev@gmail.com",
+    linkedin: "morethanmin",
+    github: "morethanmin",
     instagram: "",
-    youtube: "https://youtube.com/channel/UCwskk9ScOIehrv3gnTm8deQ?si=2jL0ssFglXGA18Oc",
   },
   projects: [
     {
-      name: `여하월 BLOG`,
-      href: "",
+      name: `morethan-log`,
+      href: "https://github.com/morethanmin/morethan-log",
     },
   ],
   // blog setting (required)
   blog: {
-    title: "여하월 BLOG",
-    description: "welcome to BLOG!",
-    theme: "auto", // ['light', 'dark', 'auto']
+    title: "morethan-log",
+    description: "welcome to morethan-log!",
+    scheme: "dark", // 'light' | 'dark' | 'system'
   },
 
-  // CONFIG configuration (required)
-  link: "https://yeohawol_official.vercel.app",
-  since: 2024, // If leave this empty, current year will be used.
-  lang: "ko-KR", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
+  // CONFIG configration (required)
+  link: "https://morethan-log.vercel.app",
+  since: 2022, // If leave this empty, current year will be used.
+  lang: "en-US", // ['en-US', 'zh-CN', 'zh-HK', 'zh-TW', 'ja-JP', 'es-ES', 'ko-KR']
   ogImageGenerateURL: "https://og-image-korean.vercel.app", // The link to generate OG image, don't end with a slash
-  seo: {
-    keywords: ["Blog", "Website", "Notion"],
-  },
 
   // notion configuration (required)
   notionConfig: {
